@@ -21,7 +21,9 @@
     <link rel="stylesheet" href="assets/css/magnific-popup.css">
     <link rel="stylesheet" href="assets/css/scrollbar.css">
     <link rel="stylesheet" href="assets/css/hiddenbar.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/color.css">
     <link href="assets/css/color/theme-color.css" id="jssDefault" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/rtl.css">
@@ -176,43 +178,163 @@
                                 </ul>
                             </div> -->
                             <div class="title wow slideInUp animated" data-wow-delay="0.3s" data-wow-duration="1500ms">
-                                <h2>Portfolio</h2>
+                                <h2 style="font-size: 40px; font-weight: 500;">17/44 Burton Road, Athelstone 5076</h2>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!--End breadcrumb area-->
 
-        <!--Start Project Style1 Area-->
-        <section class="project-style1-area project-page1">
+        <!-- Start project details Area -->
+        <section class="project-details-area">
             <div class="container">
                 <div class="row">
-                    <!--Start Single Project Style1-->
-                    <div class="col-xl-4 col-lg-6 col-md-6">
-                        <div class="single-project-style1">
-                            <div class="img-holder">
-                                <img src="assets/images/project/athelstone/title.png" alt="Awesome Image">
-                                <div class="overlay-content">
-                                    <div class="inner">
-                                        <h3><a href="burton-road-athelstone.html">Burton Road<br><span>Athelstone,
-                                                    SA</span></a></h3>
-                                        <div class="readmore-button">
-                                            <a href="burton-road-athelstone.html"><span
-                                                    class="flaticon-up-arrow"></span></a>
+                    <div class="col-xl-12">
+                        <div class="project-details-content">
+                            <div class="project-detail-main-image">
+                                <img src="assets/images/project/athelstone/main.png" alt="">
+                                <div class="project-info">
+                                    <ul>
+                                        <li>
+                                            <ul>
+                                                <li><span>Date:</span> 20 Nov, 2024</li>
+                                                <li><span>Coverage:</span> 56%</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><span>Build Area:</span> 249 SqM.</li>
+                                                <li><span>Land Area:</span> 445 SqM.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <ul>
+                                                <li><span>Status:</span> Sold</li>
+                                                <li><span>Specifications:</span> <i class="fa-solid fa-bed"></i> 4 <i
+                                                        class="fa-solid fa-shower"></i> 2 <i
+                                                        class="fa-solid fa-car"></i> 2</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="image-grid">
+                                <div class="row">
+                                    <div class="column">
+                                        <img src="assets/images/project/athelstone/image2.png" alt=""
+                                            onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image3.png" alt=""
+                                            onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image4.jpg" alt=""
+                                            onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image6.png" alt=""
+                                            onclick="openImage(this)">
+                                        <!-- <img src="assets/images/project/athelstone/image7.png" alt=""> -->
+                                    </div>
+                                    <div class="column">
+                                        <img src="assets/images/project/athelstone/image8.png" alt=""
+                                            onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image10.png" alt=""
+                                            onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image12.png" alt=""
+                                            onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image13.png" alt=""
+                                            onclick="openImage(this)">
+                                        <!-- <img src="assets/images/project/athelstone/image15.png" alt=""> -->
+                                    </div>
+                                    <div class="column">
+                                        <img src="assets/images/project/athelstone/image19.png" alt=""
+                                            onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image21.png" alt=""
+                                            onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image23.png" alt=""
+                                            onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image24.png" alt=""
+                                            onclick="openImage(this)">
+                                        <!-- <img src="assets/images/project/athelstone/image24.png" alt=""> -->
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="imageModal" class="modal" onclick="closeImage()">
+                                <img id="modalImg">
+                            </div>
+
+                            <!-- <div class="project-detail-text-1">
+                                <h2>Washroom Wall Design</h2>
+                                <p>Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui
+                                    dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta
+                                    sunt explicabo. Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit
+                                    amet finibus eros. Lorem Ipsum is simply dummy text of the printing and typesetting
+                                    industry. Lorem Ipsum has been the ndustry standard dummy text ever since the 1500s,
+                                    when an unknown printer took a galley of type and scrambled it to make a type
+                                    specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy
+                                    text of the new design printng and type setting Ipsum Take a look at our round up of
+                                    the best shows coming soon to your telly box has been the is industrys. When an
+                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
+                                    It has survived not only five centuries, but also the leap into electronic
+                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                                    the release of Letraset sheets containing.</p>
+                            </div> -->
+
+                            <!-- <div class="project-detail-text-2">
+                                <div class="row">
+                                    <div class="col-xl-6">
+                                        <div class="text-box">
+                                            <h2>Most important and challenging<br> facts about this project</h2>
+                                            <p>Neque porro est qui dolorem ipsum quia quaed inventore veritatis et
+                                                quasiarchitecto beatae vitae dicta sunt explicabo. Aelltes port lacus
+                                                quis enimvar sed efficitur turpis gilla sed sit amet finibus eros. Lorem
+                                                Ipsum issimply dummy text of the printing and typesetting industry.</p>
+                                            <ul>
+                                                <li><span class="flaticon-tick"></span>We’re professional and certified
+                                                    designers</li>
+                                                <li><span class="flaticon-tick"></span>We use quality material to make
+                                                    your walls awesome</li>
+                                                <li><span class="flaticon-tick"></span>We care about our customers
+                                                    satisfaction</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="video-holder-box text-center"
+                                            style="background-image: url(assets/images/project/project-detail-video-gallery.jpg)">
+                                            <div class="icon thm-bgclr wow zoomIn" data-wow-delay="300ms"
+                                                data-wow-duration="1500ms">
+                                                <a class="video-popup thm-bgclr" title="Wazors Video Gallery"
+                                                    href="https://www.youtube.com/watch?v=p25gICT63ek">
+                                                    <span class="icon-play-button"></span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="project-detail-text-3">
+                                <h3>Making this the first true wallpaper on the internet</h3>
+                                <p> When an unknown printer took a galley of type and scrambled it to make a type
+                                    specimen book. It has survived not only five centuries, but also the leap into
+                                    electronic typesetting, remaining also the leap into essentially unchanged. It was
+                                    popularised in the 1960s with the release of Letraset sheets containing.</p>
+                            </div>
+                            <div class="project-detail-text-4">
+                                <h3>First true wall design on the Internet</h3>
+                                <p>When an unknown printer took a galley of type and scrambled it to make a type
+                                    specimen book. It has survived not only five centuries, but also the leap into
+                                    electronic typesetting, remaining essentially unchanged. It was popularised in the
+                                    1960s with the release of Letraset sheets containing. Lorem Ipsum is simply dummy
+                                    text of sheets containing. Lorem the printing and typesetting industry. Lorem Ipsum
+                                    has been the ndustry stan when an unknown printer took a galley.</p>
+                            </div> -->
+
                         </div>
                     </div>
-                    <!--End Single Project Style1-->
                 </div>
             </div>
         </section>
-        <!--End Project Style1 Area-->
-
+        <!-- End project details Area -->
 
         <!--Start footer area-->
         <footer class="footer-area">
@@ -402,6 +524,28 @@
     <script src="assets/js/jquery.tinyscrollbar.js"></script>
     <script src="assets/js/jQuery.style.switcher.min.js"></script>
     <!-- thm custom script -->
+    <script>
+        // Open image in modal
+        function openImage(imgElement) {
+            let modal = document.getElementById("imageModal");
+            let modalImg = document.getElementById("modalImg");
+
+            modal.style.display = "flex";
+            modalImg.src = imgElement.src;
+        }
+
+        // Close modal on outside click
+        function closeImage() {
+            document.getElementById("imageModal").style.display = "none";
+        }
+
+        // Close modal on pressing ESC key
+        document.addEventListener("keydown", function (event) {
+            if (event.key === "Escape") {
+                closeImage();
+            }
+        });
+    </script>
     <script src="assets/js/custom.js"></script>
 
 

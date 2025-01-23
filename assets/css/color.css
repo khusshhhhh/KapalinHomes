@@ -62,3 +62,14 @@
   max-height: 90%;
   border-radius: 10px;
 }
+
+@media (max-width: 500px) {
+  .modal img {
+    max-width: 90%;
+    max-height: fit-content;
+    z-index: 999999;
+  }
+  .image-grid {
+    margin-top: 100px;
+  }
+}

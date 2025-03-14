@@ -188,6 +188,47 @@
 
         <!-- Start project details Area -->
         <section class="project-details-area">
+            <style>
+                /* Image Grid CSS */
+                .image-grid {
+                    display: flex;
+                    flex-wrap: wrap;
+                    margin-top: 160px;
+                }
+
+                .image-grid .row {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+
+                .image-grid .column {
+                    flex: 33%;
+                    padding: 0 5px;
+                    box-sizing: border-box;
+                }
+
+                .image-grid .column img {
+                    width: 100%;
+                    height: auto;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+
+                @media (max-width: 768px) {
+                    .image-grid {
+                        margin-top: 50px;
+                    }
+
+                    .image-grid .column {
+                        flex: 100%;
+                    }
+
+                    .project-detail-main-image img {
+                        display: none;
+                    }
+                }
+            </style>
             <div class="container">
                 <div class="row">
                     <div class="col-xl-12">
@@ -211,9 +252,12 @@
                                         <li>
                                             <ul>
                                                 <li><span>Status:</span> Sold</li>
-                                                <li><span>Specs:</span><i class="fa-solid fa-bed"></i> 4<i
-                                                        class="fa-solid fa-shower"></i> 2<i class="fa-solid fa-car"></i>
-                                                    2</li>
+                                                <li>
+                                                    <span>Specs:</span>
+                                                    <i class="fa-solid fa-bed"></i> 4
+                                                    <i class="fa-solid fa-shower"></i> 2
+                                                    <i class="fa-solid fa-car"></i> 2
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -223,26 +267,40 @@
                             <div class="image-grid">
                                 <div class="row">
                                     <div class="column">
+                                        <img src="assets/images/project/athelstone/image1.jpg" alt=""
+                                            onclick="openImage(this)">
                                         <img src="assets/images/project/athelstone/image2.jpg" alt=""
                                             onclick="openImage(this)">
                                         <img src="assets/images/project/athelstone/image3.jpg" alt=""
                                             onclick="openImage(this)">
                                         <img src="assets/images/project/athelstone/image4.jpg" alt=""
                                             onclick="openImage(this)">
-                                        <img src="assets/images/project/athelstone/image6.jpg" alt=""
+                                        <img src="assets/images/project/athelstone/image5.jpg" alt=""
                                             onclick="openImage(this)">
-                                        <!-- <img src="assets/images/project/athelstone/image7.png" alt=""> -->
                                     </div>
                                     <div class="column">
+                                        <img src="assets/images/project/athelstone/image6.jpg" alt=""
+                                            onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image7.jpg" alt=""
+                                            onclick="openImage(this)">
                                         <img src="assets/images/project/athelstone/image8.jpg" alt=""
                                             onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image9.jpg" alt=""
+                                            onclick="openImage(this)">
                                         <img src="assets/images/project/athelstone/image10.jpg" alt=""
+                                            onclick="openImage(this)">
+                                    </div>
+                                    <div class="column">
+                                        <img src="assets/images/project/athelstone/image11.jpg" alt=""
                                             onclick="openImage(this)">
                                         <img src="assets/images/project/athelstone/image12.jpg" alt=""
                                             onclick="openImage(this)">
                                         <img src="assets/images/project/athelstone/image13.jpg" alt=""
                                             onclick="openImage(this)">
-                                        <!-- <img src="assets/images/project/athelstone/image15.png" alt=""> -->
+                                        <img src="assets/images/project/athelstone/image14.jpg" alt=""
+                                            onclick="openImage(this)">
+                                        <img src="assets/images/project/athelstone/image15.jpg" alt=""
+                                            onclick="openImage(this)">
                                     </div>
                                 </div>
                             </div>
@@ -250,79 +308,12 @@
                             <div id="imageModal" class="modal" onclick="closeImage()">
                                 <img id="modalImg">
                             </div>
-
-                            <!-- <div class="project-detail-text-1">
-                                <h2>Washroom Wall Design</h2>
-                                <p>Lorem ipsum is simply free text used by copytyping refreshing. Neque porro est qui
-                                    dolorem ipsum quia quaed inventore veritatis et quasi architecto beatae vitae dicta
-                                    sunt explicabo. Aelltes port lacus quis enim var sed efficitur turpis gilla sed sit
-                                    amet finibus eros. Lorem Ipsum is simply dummy text of the printing and typesetting
-                                    industry. Lorem Ipsum has been the ndustry standard dummy text ever since the 1500s,
-                                    when an unknown printer took a galley of type and scrambled it to make a type
-                                    specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy
-                                    text of the new design printng and type setting Ipsum Take a look at our round up of
-                                    the best shows coming soon to your telly box has been the is industrys. When an
-                                    unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                    It has survived not only five centuries, but also the leap into electronic
-                                    typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-                                    the release of Letraset sheets containing.</p>
-                            </div> -->
-
-                            <!-- <div class="project-detail-text-2">
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="text-box">
-                                            <h2>Most important and challenging<br> facts about this project</h2>
-                                            <p>Neque porro est qui dolorem ipsum quia quaed inventore veritatis et
-                                                quasiarchitecto beatae vitae dicta sunt explicabo. Aelltes port lacus
-                                                quis enimvar sed efficitur turpis gilla sed sit amet finibus eros. Lorem
-                                                Ipsum issimply dummy text of the printing and typesetting industry.</p>
-                                            <ul>
-                                                <li><span class="flaticon-tick"></span>We’re professional and certified
-                                                    designers</li>
-                                                <li><span class="flaticon-tick"></span>We use quality material to make
-                                                    your walls awesome</li>
-                                                <li><span class="flaticon-tick"></span>We care about our customers
-                                                    satisfaction</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <div class="video-holder-box text-center"
-                                            style="background-image: url(assets/images/project/project-detail-video-gallery.jpg)">
-                                            <div class="icon thm-bgclr wow zoomIn" data-wow-delay="300ms"
-                                                data-wow-duration="1500ms">
-                                                <a class="video-popup thm-bgclr" title="Wazors Video Gallery"
-                                                    href="https://www.youtube.com/watch?v=p25gICT63ek">
-                                                    <span class="icon-play-button"></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-detail-text-3">
-                                <h3>Making this the first true wallpaper on the internet</h3>
-                                <p> When an unknown printer took a galley of type and scrambled it to make a type
-                                    specimen book. It has survived not only five centuries, but also the leap into
-                                    electronic typesetting, remaining also the leap into essentially unchanged. It was
-                                    popularised in the 1960s with the release of Letraset sheets containing.</p>
-                            </div>
-                            <div class="project-detail-text-4">
-                                <h3>First true wall design on the Internet</h3>
-                                <p>When an unknown printer took a galley of type and scrambled it to make a type
-                                    specimen book. It has survived not only five centuries, but also the leap into
-                                    electronic typesetting, remaining essentially unchanged. It was popularised in the
-                                    1960s with the release of Letraset sheets containing. Lorem Ipsum is simply dummy
-                                    text of sheets containing. Lorem the printing and typesetting industry. Lorem Ipsum
-                                    has been the ndustry stan when an unknown printer took a galley.</p>
-                            </div> -->
-
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- End project details Area -->
 
         <!--Start footer area-->
@@ -521,11 +512,18 @@
 
             modal.style.display = "flex";
             modalImg.src = imgElement.src;
+
+            // Stop background scrolling
+            document.body.style.overflow = "hidden";
         }
 
         // Close modal on outside click
         function closeImage() {
-            document.getElementById("imageModal").style.display = "none";
+            let modal = document.getElementById("imageModal");
+            modal.style.display = "none";
+
+            // Restore background scrolling
+            document.body.style.overflow = "";
         }
 
         // Close modal on pressing ESC key
